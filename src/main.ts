@@ -23,6 +23,8 @@ async function initialize() {
 
 initialize();
 
+const colors = [0xff0000, 0x00ff00, 0x0000ff];
+
 function testLights() {
     const channel = init({
         dma: 10,
@@ -41,7 +43,7 @@ function testLights() {
     let offset = 0;
     setInterval(function () {
         for (let i = 0; i < 3 * NUM_LEDS; i++) {
-            channel.array[i] = colorWheel((offset + i) % 256);
+            channel.array[i] = colors[Math.floor(Math.random() * colors.length)];
         }
 
         offset = (offset + 1) % 256;
