@@ -34,7 +34,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
-    "rpi-ws281x-native": "^1.0.3",
+    "rpi-ws281x-native": "file:../node-rpi-ws281x-native",
     "winston": "^3.3.3"
   }
 }
