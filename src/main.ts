@@ -35,7 +35,7 @@ function testLights() {
                 brightness: 255,
                 count: NUM_LEDS,
                 invert: false,
-                stripType: stripType.WS2812
+                stripType: stripType.WS2811_RGB
             }
         ]
     })[0];
