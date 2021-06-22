@@ -28,7 +28,7 @@ const colors = [0xff0000, 0x00ff00, 0x0000ff];
 function testLights() {
     const channel = init({
         dma: 10,
-        freq: 80000,
+        freq: 800000,
         channels: [
             {
                 gpio: 18,
