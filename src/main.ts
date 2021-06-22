@@ -29,7 +29,7 @@ function testLights() {
         freq: 80000,
         channels: [
             {
-                gpio: 19,
+                gpio: 18,
                 brightness: 255,
                 count: NUM_LEDS,
                 invert: false,
