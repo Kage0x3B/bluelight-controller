@@ -41,9 +41,9 @@ function testLights() {
     })[0];
 
     let offset = 0;
-    setInterval(function () {
+    setInterval(function() {
         for (let i = 0; i < 3 * NUM_LEDS; i++) {
-            channel.array[i] = colors[Math.floor(Math.random() * colors.length)];
+            channel.array[i] = colorWheel((offset + i) % 256);
         }
 
         offset = (offset + 1) % 256;

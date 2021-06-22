@@ -1,5 +1,5 @@
 // rainbow-colors, taken from http://goo.gl/Cs3H0v
-export function colorWheel(pos: number) {
+export function colorWheel(pos: number): number {
     pos = 255 - pos;
 
     if (pos < 85) {
@@ -18,5 +18,5 @@ function rgbToInt(r: number, g: number, b: number): number {
 }
 
 export function rgbwToInt(r: number, g: number, b: number, w: number): number {
-    return ((w & 0xff) << 24) | ((r & 0xff) << 16) | ((g & 0xff) << 8) | (b & 0xff);
+    return ((w & 0xff) << 24) | ((r & 0xff) << 16) | ((g & 0xff) << 8) | (b & 0xff)
 }
